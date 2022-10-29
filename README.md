@@ -21,7 +21,7 @@ Part 4 | 2020-01-15 | 2020-02-01 | 22,460,122 | 449.2 | 193
 Part 5 | 2020-02-01 | 2020-02-15 | 11,564,597 | 231.3 | 97.9
 Part 6 | 2020-02-15 | all after | 6,358,627 | 127.2 | 55.1
 
-Data Dictionary for the "tweet_ids" file(s):
+Data Dictionary for the "tweet_ids" CSV file(s):
 
 column_name | datatype | description
 --- | --- | ---
@@ -30,7 +30,7 @@ status_id | INTEGER | unique identifier for the tweet
 
 ## User Details
 
-Data Dictionary for the "user_details_20210806.csv" file:
+Data Dictionary for the "user_details_v20210806" CSV file:
 
 
 column_name | datatype | description
@@ -39,8 +39,8 @@ row_id	| INTEGER | **anonymized** unique identifier for each user in our "impeac
 created_on	| DATE | date the user was created
 screen_name_count	| INTEGER | number of screen names used
 is_bot	| BOOLEAN | whether or not we classified this user as a "bot" / automated account
-bot_rt_network	| INTEGER | for bots, which retweet network (0:anti-trump, 1:pro-trump) -- DON'T USE THIS!!
-is_q	| BOOLEAN | whether or not this user is classified as a Q-anon promoter (i.e. pro-Trump users who used Q-anon language / hashtags in their profiles)
+bot_rt_network	| INTEGER | for bots, which retweet network cluster (0, 1)
+is_q	| BOOLEAN | whether or not this user is classified as a Q-anon promoter (i.e. pro-Trump users who used Q-anon language / hashtags in their profiles, EXCLUDING anti-Trump users and users tweeting with anti-Trump hashtags)
 q_status_count	| INTEGER | the number of tweets with Q-anon language / hashtags
 status_count	| INTEGER | number of total tweets authored by this user (in our "impeachment 2020" dataset only)
 rt_count	| INTEGER | number of total retweets authored by this user (in our "impeachment 2020" dataset only)
