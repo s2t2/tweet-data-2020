@@ -10,13 +10,18 @@ If you are a researcher interested in using our data, we would be happy to invit
 
 ## Tweet Identifiers (Public)
 
-A single file of 67M tweet identifiers is too large to export from Google BigQuery, so instead we have split up this dataset into two parts (A and B).
+A single file of 67M tweet identifiers is too large to export from Google BigQuery, so instead we have split up this dataset into six parts, based on the tweet's creation date (see table below). You will need to union the files to restore the original dataset.
 
-File A contains all tweets created before "2020-01-15", while File B contains the rest.
+File Name | Start Date (Inclusive) | End Date (Exclusive) | Num Rows | File Size MB | File Size MB (.ZIP Compressed)
+-- | -- | -- | -- | -- | --
+Part 1 | all before | 2019-12-15 | 4,082,499 | 81.6 | 33.2
+Part 2 | 2019-12-15 | 2020-01-01 | 14,156,573 | 283.1 | 120.4
+Part 3 | 2020-01-01 | 2020-01-15 | 9,044,139 | 180.9 | 76.4
+Part 4 | 2020-01-15 | 2020-02-01 | 22,460,122 | 449.2 | 193
+Part 5 | 2020-02-01 | 2020-02-15 | 11,564,597 | 231.3 | 97.9
+Part 6 | 2020-02-15 | all after | 6,358,627 | 127.2 | 55.1
 
-You will have to union the two files to restore the original dataset.
-
-Data Dictionary for the "tweet_ids_public" file(s):
+Data Dictionary for the "tweet_ids" file(s):
 
 column_name | datatype | description
 --- | --- | ---
