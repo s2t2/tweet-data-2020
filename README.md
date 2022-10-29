@@ -30,7 +30,7 @@ status_id | INTEGER | unique identifier for the tweet
 
 ## User Details
 
-Data Dictionary for the "user_details_v20210806" CSV file:
+Data Dictionary for the "user_details_v20210806" CSV file (494.3 MB / 147.1 MB compressed):
 
 
 column_name | datatype | description
