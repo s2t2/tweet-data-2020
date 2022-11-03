@@ -55,10 +55,10 @@ friend_count	| INTEGER | number of friends (in our "impeachment 2020" dataset on
 friend_count_b	| INTEGER | ... who are bots
 friend_count_h	| INTEGER | ... who are humans
 avg_toxicity	| FLOAT | average "toxicity" score from the Detoxify model
-avg_severe_toxicity	| FLOAT | average "sever toxicity" score from the Detoxify model
+avg_severe_toxicity	| FLOAT | average "severe toxicity" score from the Detoxify model
 avg_insult	| FLOAT | average "insult" score from the Detoxify model
 avg_obscene	| FLOAT | average "obscene" score from the Detoxify model
 avg_threat	| FLOAT | average "threat" score from the Detoxify model
 avg_identity_hate	| FLOAT | average "identity hate" score from the Detoxify model
-fact_scored_count	| INTEGER | number of tweets with URL domains that we have rankings for
-avg_fact_score	| FLOAT | average fact score of links shared (1: fake news, 5: mainstream media)
+fact_scored_count	| INTEGER | number of tweets with URL domains that we have fact check scores for
+avg_fact_score	| FLOAT | average fact score of URLs / links shared (1: fake news, 5: mainstream media)
