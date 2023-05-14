@@ -4,8 +4,6 @@ This repository contains data used in conjunction with the paper ["Bots, Disinfo
 
 The data is stored here separately for sharing purposes, while the code can be found [here](https://github.com/s2t2/tweet-analysis-2020).
 
-If you are a researcher interested in using our data, we would be happy to invite you to access the full dataset in our shared Google BigQuery data environment.
-
 # Data Dictionary
 
 ## Tweet Identifiers (Public)
